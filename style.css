@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For Smooth Scrolling  */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(67, 166, 143, 1) 28%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Navigation Menu */
+.header .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.header .menu a {
+    color: #fff;
+}
+
+.header .menu a:hover {
+    color: #f00;
+}
+
+.section {
+    margin: 30px 0;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(67, 166, 143, 1) 28%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    color: #fff;
+    font-size: 40px;
+}
+
+/* For that Extra Space After Home */
+.section#home {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header .menu ul {
+        gap: 15px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+}
