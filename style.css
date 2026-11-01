@@ -104,3 +104,38 @@ img {
         font-size: 28px;
     }
 }
+
+/*Make the background colour for first paragraph in all sections light yellow*/
+.section p:first-of-type {
+    background-color: lightyellow;
+}
+/* Alternate background colors for all lis #eee and #ddd*/
+.section ul li:nth-child(odd) {
+    background-color: #eee;
+}
+.section ul li:nth-child(even) {
+    background-color: #ddd;
+}
+
+/*Make the background #f4f4f4 and padding 20px for all sections that have an image*/
+.section:has(img) {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/*Make the first paragraph after a ul #333*/
+ul + p {
+    background-color: #333;
+    color: #fff;
+}
+
+/*Make the color of any links that start with http:// orhttps:// red*/
+a[href^="http://"], a[href^="https://"] {
+    color: red;
+}
+
+/*Make the first link in the first paragraph and the second paragraph of the section bold*/
+.section:nth-of-type(1) p:first-of-type a:first-of-type,
+.section:nth-of-type(1) p:nth-of-type(2) a:first-of-type {
+    font-weight: bold;
+}
